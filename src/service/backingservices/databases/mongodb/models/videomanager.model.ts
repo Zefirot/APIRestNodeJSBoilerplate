@@ -15,5 +15,5 @@ const VideoManagerSchema = new Schema({
 
 const VideoManagerModel = videoDB.model('videomanager', VideoManagerSchema);
 
-export default VideoManagerSchema;
+export default VideoManagerModel;
 

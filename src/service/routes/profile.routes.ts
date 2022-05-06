@@ -24,13 +24,11 @@ routerProfileInstance.get('/id', async (req, res) => {
 
 routerProfileInstance.get('/get', async (req, res) => { //Esto se tiene que setear por parametro y devuelve un json del elemento
   try {
-
     const {profileID} = req.query
     const profileElemn = localData.find((e) => String(e.id) === String(profileID))
     if (!profileElemn) {
       throw new Error("Elemento no encontrado");
     }
-
     return res.json(profileElemn);
   } catch (error) {
     let errorMessage = 'Failed to do something exceptional';

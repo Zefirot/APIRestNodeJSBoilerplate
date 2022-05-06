@@ -18,7 +18,9 @@
   },
   "dependencies": {
     "dotenv": "^16.0.0",
+    "mongoose": "^6.3.2",
     "morgan": "^1.10.0",
+    "package.json": "^2.0.1",
     "restify": "^8.6.1",
     "restify-cors-middleware2": "^2.1.2",
     "restify-router": "^0.6.2"
